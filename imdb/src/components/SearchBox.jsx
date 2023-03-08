@@ -10,6 +10,7 @@ export default function SearchBox() {
         console.log(search);
         if (!search) return;
         router.push(`/search/${search}`);
+        setSearch('');
     }
 
     return (
