@@ -2,12 +2,8 @@ import MenuItem from "./MenuItem";
 import { AiTwotoneHome } from "react-icons/ai";
 import { BsInfoSquareFill } from "react-icons/bs";
 import Link from "next/link";
-//import DarkModeSwitch from "./DarkModeSwitch";
-import dynamic from "next/dynamic";
+import DarkModeSwitch from "./DarkModeSwitch";
 
-const DarkModeSwitch = dynamic(() => import("./DarkModeSwitch"), {
-    ssr: false,
-});
 
 
 export default function Header() {
