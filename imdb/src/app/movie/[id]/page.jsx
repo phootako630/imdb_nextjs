@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Videos from "@/components/Videos";
 
 async function getMovie(movieId) {
     const res = await fetch(
@@ -46,7 +47,10 @@ export default async function MoviePage({ params }) {
                     </span>
                         {movie.vote_count}
                     </p>
+
                     <p className="text-lg mb-3"> <span className="font-semibold mr-1 text-blue-500">Video:</span></p>
+                    <Videos movieId={movieId} />
+
                 </div>
         </div>
         </div>
